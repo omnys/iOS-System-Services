@@ -34,6 +34,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/omnys/iOS-System-Services.git", :tag => "2.0.2" }
   s.source_files  = "SystemServices", "System Services/**/*.{h,m}"
+  s.exclude_files = 'System Services/Utilities/route.h'
   s.frameworks = "AVFoundation", "CoreTelephony", "Security", "CoreMotion", "ExternalAccessory"
   s.requires_arc = true
 
